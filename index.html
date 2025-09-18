@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro con Firebase</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- SDK de Firebase -->
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+  <form id="registroForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required>
+
+    <label for="documento">Documento:</label>
+    <input type="text" id="documento" required>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" required>
+      <option value="">Seleccione...</option>
+      <option value="Hombre">Hombre</option>
+      <option value="Mujer">Mujer</option>
+      <option value="Prefiero no decir">Prefiero no decir</option>
+    </select>
+
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" required>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h2>Registros Guardados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Documento</th>
+        <th>Sexo</th>
+        <th>Fecha Nac.</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody id="tablaDatos"></tbody>
+  </table>
+</body>
+</html>
