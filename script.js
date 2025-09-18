@@ -1,20 +1,25 @@
 // Importar Firebase
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 
 // ⚡️ CONFIGURA AQUÍ TUS CREDENCIALES
-const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_PROYECTO.firebaseapp.com",
-  projectId: "TU_PROYECTO",
-  storageBucket: "TU_PROYECTO.appspot.com",
-  messagingSenderId: "TU_SENDER_ID",
-  appId: "TU_APP_ID"
-};
+// Import the functions you need from the SDKs you need
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Inicializar Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDm36WAKaoD5tifZU-ODZVMpxuXFjNUCUY",
+    authDomain: "registro-personas-665ea.firebaseapp.com",
+    projectId: "registro-personas-665ea",
+    storageBucket: "registro-personas-665ea.firebasestorage.app",
+    messagingSenderId: "292033938733",
+    appId: "1:292033938733:web:091a4e5579008f1b12ffa4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 
 // Calcular edad en 2025
 function calcularEdad(fechaNac) {
